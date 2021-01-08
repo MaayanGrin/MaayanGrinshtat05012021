@@ -13,7 +13,6 @@ import {
 } from '../../shared/models/weather-view.models';
 import {
   IACCUWeatherAutocompleteResponse,
-  IGet5DaysOfForecastResponse,
   IGetCurrentConditionsResponse
 } from '../../shared/models/weather-response.models';
 

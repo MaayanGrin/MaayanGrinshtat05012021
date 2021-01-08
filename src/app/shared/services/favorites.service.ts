@@ -5,6 +5,7 @@ import {WeatherLocationFavorite} from '../models/favorities.models';
 @Injectable({
   providedIn: 'root'
 })
+
 export class FavoritesService {
   private FavoritesTrack$: BehaviorSubject<WeatherLocationFavorite[]> = new BehaviorSubject<WeatherLocationFavorite[]>([]);
 

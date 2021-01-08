@@ -56,5 +56,6 @@ const MODULES = [
     MatDialogConfig
   ]
 })
+
 export class MaterialModule {
 }

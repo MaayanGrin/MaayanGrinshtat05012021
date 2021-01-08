@@ -2,6 +2,7 @@ import {Action, createReducer, on} from '@ngrx/store';
 import * as favActions from '../actions/favorites.actions';
 import {WeatherLocationFavorite} from '../../shared/models/favorities.models';
 
+
 export const favoritesFeatureKey = 'favorites';
 
 export interface State {

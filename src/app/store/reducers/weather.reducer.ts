@@ -43,6 +43,7 @@ const weatherReducer = createReducer(
   )
 );
 
+
 export function reducer(state = initialState, action: Action) {
   return weatherReducer(state, action);
 }

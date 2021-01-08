@@ -50,6 +50,7 @@ export class WeatherApiService {
     });
   }
 
+
   public get5DaysOfDailyForecasts(locationKey: string): Observable<AppResponse<IGet5DaysOfForecastResponse>> {
     const url = `${this.apiBaseUrlNamespace}/${this.apiForecastNamespace}/${locationKey}`;
     return this.http.get<IGet5DaysOfForecastResponse>

@@ -22,6 +22,7 @@ export const getFiveDaysForecast = createSelector(selectWeatherState, fromWeathe
 export const getAutocompleteSelected = createSelector(selectWeatherState, fromWeather.getAutocompleteSelectedValue);
 export const getIsCurrentCityExistInFavoriteList = createSelector(selectWeatherState, fromWeather.getIsCurrentCityExistInFavoriteList);
 
+
 export const selectFavoritesState = createFeatureSelector<fromFavorites.State>(fromFavorites.favoritesFeatureKey);
 export const getSelectedFavorite = createSelector(selectFavoritesState, fromFavorites.getSelectedFavorite);
 export const getFavoritesArray = createSelector(selectFavoritesState, fromFavorites.getFavoritesArray);

@@ -6,7 +6,6 @@ import {TopNavBarComponent} from './components/top-nav-bar/top-nav-bar.component
 const components = [
   TopNavBarComponent
 ];
-
 @NgModule({
   declarations: [components],
   imports: [

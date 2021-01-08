@@ -5,7 +5,6 @@ const AppErrorsTranslationMapping = {
   9999: 'Unknown error',
   401: 'Unauthorized', // must be listed in i18n json file_formData
   500: 'General Error', // must be listed in i18n json file_formData
-
   0: 'an error occurred',
   801: 'Unknown error',
 };

@@ -56,6 +56,7 @@ export class WeatherContainerComponent implements OnInit {
       this.store.dispatch(weatherActions.getFiveDailyWeatherForecasts({data: key}));
       this.store.dispatch(favActions.setSelectedFavorite({data: null}));
 
+
       this.filteredOptions$ = this.store.select(fromRoot.getAutocompleteResults);
       this.selectedAutoCompleteOption$ = this.store.select(fromRoot.getAutocompleteSelected);
       this.favorites$ = this.store.select(fromRoot.getFavoritesArray);

@@ -85,6 +85,7 @@ export interface IDailyForecastViewModel {
   nightIcon: number;
 }
 
+
 export class DailyForecastViewModel {
   date: string;
   temperature: IDailyForecastTemperature;

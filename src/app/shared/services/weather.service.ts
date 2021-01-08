@@ -21,6 +21,7 @@ export class WeatherService {
     return this.weatherApiService.getAutocompleteResults(query).pipe(map ((res) => res.data));
   }
 
+
   public getCurrentSelectedPlaceForecast(locationKey: string): Observable<IGetCurrentConditionsResponse> {
     return this.weatherApiService.getCurrentConditions(locationKey).pipe(map ((res) => res.data[0]));
   }

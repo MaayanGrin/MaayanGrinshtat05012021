@@ -1,0 +1,20 @@
+<div class="fav-container" fxLayout="column" fxLayoutAlign="center center">
+  <h1>Favorites</h1>
+  <mat-card class="fav-container-card" fxLayout="row wrap" fxLayoutAlign="center center" fxLayoutGap="1rem">
+    <mat-card (click)="favoriteClicked(favorite)"
+              *ngFor="let favorite of favoritesArray$ | async"
+              class="inner-fav-cards"
+              fxLayout="column" fxLayoutAlign="center center"
+              fxLayoutGap="0.5rem">
+      <img [src]="iconsGeneratorFunc(favorite.icon)" alt="weather icon" class="img-responsive" mat-card-avatar
+           typeof="foaf:Image">
+      <mat-card-header fxLayoutAlign="center center">
+        <mat-card-title>{{favorite.name }}</mat-card-title>
+        <mat-card-title>{{favorite.currentWeatherText }}</mat-card-title>
+        <mat-card-subtitle>{{favorite.degrees}} C°
+        </mat-card-subtitle>
+      </mat-card-header>
+    </mat-card>
+    <h3 *ngIf="!(favoritesArray$ | async).length">Nothing here yet</h3>
+  </mat-card>
+</div>

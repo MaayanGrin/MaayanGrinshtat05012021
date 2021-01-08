@@ -1,0 +1,29 @@
+.weather-container {
+  padding: 1rem;
+
+  h1 {
+    margin-block-start: 0;
+    margin-block-end: 0;
+  }
+
+  ::ng-deep mat-card {
+    .mat-card-header-text {
+      margin: 0;
+    }
+  }
+
+  .main-header {
+    margin: 1rem 1rem 0 0;
+  }
+
+  mat-card-content {
+    margin: 0 1rem 1rem 1rem;
+  }
+
+  .inner-forecast-cards{
+    margin-top: 2rem;
+    text-align: center;
+  }
+
+}
+

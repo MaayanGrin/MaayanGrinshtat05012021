@@ -1,0 +1,17 @@
+.fav-container {
+  padding: 1rem;
+
+  .fav-container-card {
+    max-width: 50rem;
+
+    .inner-fav-cards {
+      text-align: center;
+      align-self: center;
+      max-width: 10rem;
+      min-width: 10rem;
+      margin: 1rem;
+      cursor: pointer;
+    }
+  }
+}
+
